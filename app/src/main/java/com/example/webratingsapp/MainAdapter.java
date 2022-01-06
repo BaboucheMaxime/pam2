@@ -36,7 +36,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
 
         Site model = arraySite.get(position);
         holder.tvName.setText(model.getUrl());
-        holder.tvNumber.setText(model.getRating());
+        holder.tvNumber.setText("note " + model.getRating() + "/5");
     }
 
     @Override

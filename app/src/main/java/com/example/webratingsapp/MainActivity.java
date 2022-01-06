@@ -90,30 +90,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void searchUrl(View v) {
-
-        String message = bt_status + " TEST";
-
-        if (bt_status == "Search") {
-            Button tv_title = findViewById(R.id.header2);
-            tv_title.setText("Cancel");
-            bt_status = "Cancel";
-            Toast toast = Toast.makeText(getApplicationContext(),
-                    message,
-                    Toast.LENGTH_SHORT);
-            toast.show();
-        }
-        else {
-            Button tv_title = findViewById(R.id.header2);
-            tv_title.setText("Search");
-            bt_status = "Search";
-            Toast toast = Toast.makeText(getApplicationContext(),
-                    message,
-                    Toast.LENGTH_SHORT);
-            toast.show();
-        }
-    }
-
     public void getContactList() {
 
         arraySite = mydb.getAllElements();
